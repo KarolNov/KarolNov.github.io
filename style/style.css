@@ -1,0 +1,123 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 55%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 55%;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  color: black;
+  overflow: hidden;
+}
+
+#langSwitch {
+  position: absolute;
+  cursor: pointer;
+  font-size: 200%;
+  right: 0;
+  top: 0;
+  margin: 0 10px;
+}
+
+#welcomeAnimation h1 {
+  margin: 1rem 0;
+  font-size: 6rem;
+}
+
+#underline {
+  left: 0;
+  position: absolute;
+  height: 2rem;
+  width: 0%;
+  background: black;
+  transition: width 3000ms ease-in, height 2000ms ease-in-out;
+}
+
+#menu {
+  overflow: hidden;
+  position: absolute;
+  z-index: 99;
+  width: 100vw;
+  height: calc(100% - 8.5rem);
+  color: white;
+  opacity: 0;
+  transition: opacity 2000ms ease-in-out;
+}
+#menu .nav {
+  display: inline-block;
+  position: relative;
+  left: 5px;
+  transition: all 2000ms ease-in;
+}
+#menu .nav > h1, #menu #back {
+  font-size: 4rem;
+  margin: 1.5rem 0;
+}
+#menu .nav > h1:hover, #menu #back:hover {
+  cursor: pointer;
+}
+#menu .nav > h1 > a, #menu #back > a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+#menu .nav > h1 > a:hover, #menu #back > a:hover {
+  color: white;
+}
+#menu .nav > h1 > a::before, #menu #back > a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#menu .nav > h1 > a:hover::before, #menu #back > a:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+#menu #back {
+  position: absolute;
+  font-size: 2rem;
+  top: 0;
+  margin-top: 0.9rem;
+  left: 1rem;
+  opacity: 0;
+  transition: opacity 2000ms ease-in-out;
+}
+
+#navContainer {
+  transition: all 2000ms ease-in-out;
+}
+
+.content {
+  background: white;
+  display: none;
+  color: black;
+  height: 0;
+  width: 100%;
+  transition: height 2000ms ease-in-out;
+  position: relative;
+  margin-top: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
