@@ -1,31 +1,4 @@
-const translation = {
-    "backText": {
-        en: "back",
-        pl: "powrót"
-    },
-    "about_link": {
-        en: "about me",
-        pl: "o mnie"
-    },
-    "portfolio_link": {
-        en: "my works",
-        pl: "moje prace"
-    },
-    "contact_link": {
-        en: "contact",
-        pl: "kontakt"
-    }
-}
-
-translation.translate = (lang)=>{
-    Object.keys(translation).forEach((key)=>{
-        let doc = document.getElementById(key)
-        console.log(doc);
-        if(doc){
-        doc.innerHTML = translation[key][lang]
-        }
-    })
-}
+import translation from './translation';
 
 window.onload = ()=>{
     langSwitch();
