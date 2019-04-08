@@ -88,14 +88,30 @@ const showMenu = () => {
     })
 }
 
-const handleModals = ()=>{
+const handleModals = () => {
     let toggles = Array.from(document.getElementsByClassName("toggleModal"));
 
-    toggles.forEach(el=>{
-        el.onclick = (e)=>{
+    toggles.forEach(el => {
+        el.onclick = () => {
             let target = el.attributes["data-modal-target"].value;
             let modal = document.getElementById(target);
-            modal.style.display = modal.style.display==="block" ? "none" : "block";
+            let backdrop = modal.getElementsByClassName("backdrop")[0];
+            let modalContent = modal.getElementsByClassName("modal-content")[0];
+            let shown = (modal.style.display === "block");
+
+            if (!shown) {
+                modal.style.display = "block";
+                setTimeout(() => {
+                    backdrop.style.opacity = 0.6;
+                    modalContent.style.top = 0;
+                }, 20)
+            } else {
+                backdrop.style.opacity = 0;
+                modalContent.style.top = "-200vh";
+                setTimeout(() => {
+                    modal.style.display = "none";
+                }, 800);
+            }
         }
     })
 

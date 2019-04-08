@@ -11,8 +11,8 @@ const translation = {
         en: `<p>I am Javascript Developer with almost year of experience in developing websites and apps based on HTML5 (and Bootstrap library), CSS3 (and precompiler Sass), also using Javascript i jQuery. </p> 
         <p> Last half year I was intensely trening Javascript programming, including Node.js (mostly Express framework and MySQL databases) and React (with MobX). I have also small experience in production of Electron desktop apps. <p/> 
         <p>I'm looking for a job, in which I will have possibility to develop towards being fullstack or backend Javascript Developer. I'm considering also learning React Native.</p>`,
-        pl: 
-        `<p>Jestem Javascript Developerem z prawie rocznym doświadczeniem w budowaniu stron w oparciu od HTML5 (oraz bibliotekę Bootstrap), CSS3 (oraz prekompilator Sass), a także Javascript i jQuery. </p> 
+        pl:
+            `<p>Jestem Javascript Developerem z prawie rocznym doświadczeniem w budowaniu stron w oparciu od HTML5 (oraz bibliotekę Bootstrap), CSS3 (oraz prekompilator Sass), a także Javascript i jQuery. </p> 
         <p> Ostatnie pół roku intensywnie ćwiczyłem jednak samo programowanie w Javascript, a także Node.js (głównie Express oraz bazy danych MySQL) i React (wraz z MobX). Mam też małe doświadczenie w produkowaniu aplikacji desktopowych z użyciem Electron. <p/> 
         <p>Szukam pracy, w której będę miał możliwość rozwijania się w interesujących mnie kierunkach - fullstack lub backend Javascript Developer. Rozważam też naukę React Native.</p>`
     },
@@ -29,15 +29,107 @@ const translation = {
         pl: "Moje umiejętności w Javascript:"
     },
     "js_list": {
-        en: 
+        en:
+            `
+            <li> I skilfully use newest version of ECMAScript (even up to ES2019) </li>
+            <li> I'm able to use documentation (e.g. MDN) </li>
+            <li> I try to maintain clean code, I use JSDoc3 to describe and comment my work </li>
+            <li> I can write most of the browser code without using heavy dependecies like jQuery </li>
+            <li> I know basics of code debugging, I'm analytical thinker when it comes to problem solving </li>
+            <li> I know Node.js and React </li>
+            <li> ...and many more for you to find out during recruitment talk! </li>
+        `,
+        pl:
+            `
+            <li> Umiejętnie posługuję się najnowszą wersją ECMAScript (nawet do ES2019) </li>
+            <li> Potrafię korzystać z dokumentacji (m.in. MDN) </li>
+            <li> Staram się utrzymywać czysty kod, korzystam z JSDoc3 do opisu i komentarzy </li>
+            <li> Potrafię programować bez użycia jQuery czy innych ciężkich zależności </li>
+            <li> Znam podstawy debugowania kodu, umiem myśleć analitycznie w poszukiwaniu problemu </li>
+            <li> Znam Node.js i React </li>
+            <li> ... i wiele więcej do odkrycia podczas rozmowy kwalifikacyjnej! </li>
         `
-            <li>
+    },
+    "react_title": {
+        en: "My React skills:",
+        pl: "Moje umiejętności w React:"
+    },
+    "react_list": {
+        en:
+            `
+            <li> I really solidly know basics of React </li>
+            <li> I use MobX to state managment of big applications (although I'll gladly learn Redux) </li>
+            <li> I've experience in building big application in React </li>
+            <li> I know theorically Hooks, I use stateless functional components, where it is possible and it makes sense </li>
+        `,
+        pl:
+            `
+            <li> Znam bardzo solidnie podstawy Reacta </li>
+            <li> Korzystam z MobX do state managment przy dużych aplikacjach (aczkolwiek chętnie nauczę się Redux) </li>
+            <li> Mam doświadczenie w budowanie bardzo dużej aplikacji w React </li>
+            <li> Znam teorię Hooków, korzystam ze stateless functional components, gdzie jest to sensowne </li>
+        `
+    },
+    "node_title": {
+        en: "My Node.js skills:",
+        pl: "Moje umiejętności w Node.js:"
+    },
+    "node_list": {
+        en:
+            `
+            <li> I created my own API while building large application </li>
+            <li> I used manly Express.js </li>
+            <li> I've little working experience with Electron to build desktop applications based on React and Node.js </li>
+            <li> I've used MySQL database </li>
+            <li> I know basics of WebSockets </li>
+        `,
+        pl:
+            `
+            <li> Stworzyłem własne API przy budowie dużej aplikacji </li>
+            <li> Korzystałem głównie z Express.js </li>
+            <li> Mam małe doświadczenie w korzystaniu z Electrona do budowy aplikacji desktopowych w oparciu od React i Node.js </li>
+            <li> Korzystałem z baz danych MySQL </li>
+            <li> Znam podstawy WebSockets </li>
+        `
+    },
+    "html_title": {
+        en: "My HTML5 skills:",
+        pl: "Moje umiejętności w HTML5:"
+    },
+    "html_list": {
+        en:
+            `
+            <li> I well know Bootstrap library </li>
+            <li> I used WebAudio API </li>
+            <li> I know how to handle with canvas rendering to create interactive elements </li>
+            <li> I used WebSockets while building basic application </li>
+        `,
+        pl:
+            `
+            <li> Znam dobrze bibliotekę Bootstrap </li>
+            <li> Korzystałem z API do WebAudio </li>
+            <li> Potrafię użyć canvas w przeglądarce do tworzenia interaktywnych elementów </li>
+            <li> Korzystałem z WebSockets przy budowie podstawowej aplikacji </li>
+        `
+    },
+    "sass_title": {
+        en: "My Sass/CSS3 skills:",
+        pl: "Moje umiejętności w Sass/CSS3:"
+    },
+    "sass_list": {
+        en:
+        `
+            <li> I know advanced styling in CSS </li>
+            <li> I use CSS transitions and animations </li>
+            <li> I use and create SVG graphics (and sprites) and animate them with CSS </li>
+            <li> I know how to use variables, mixins and more in Sass </li>
         `,
         pl:
         `
-            <li> Umiejętnie posługuję się najnowszą wersją ECMAScript (nawet do ES2019) </li>
-            <li> Potrafię korzystać z dokumentacji (m.in. MDN) </li>
-            <li> Staram się utrzymywać czysty kod, korzystam z JSDoc3 do opisu i komentarzy</li>
+            <li> Znam zaawansowane użycie CSS </li>
+            <li> Korzystam z animacji i przejść w CSS </li>
+            <li> Korzystam z i tworzę grafiki SVG (i sprite) i animuję je z pomocą CSS</li>
+            <li> Potrafię korzystać ze zmiennych, mixin i innych możliwości Sass </li>
         `
     },
     "skills_title_soft": {
@@ -91,6 +183,10 @@ const translation = {
         Nie boję się mieć wątpliwości i przedstawiać swoją opinię. Umiem czytać dokumentację i zawsze szukam rozwiązania problemu zanim zadam pytanie komuś z większą wiedzą.
         </p>`
     },
+    "skills_title_other":{
+        en: "Other skills",
+        pl: "Pozostałe umiejętności"
+    },
     "portfolio_link": {
         en: "my works",
         pl: "moje prace"
@@ -102,12 +198,12 @@ const translation = {
 
 }
 
-translation.translate = (lang)=>{
-    Object.keys(translation).forEach((key)=>{
+translation.translate = (lang) => {
+    Object.keys(translation).forEach((key) => {
         let doc = document.getElementById(key)
         console.log(doc);
-        if(doc){
-        doc.innerHTML = translation[key][lang]
+        if (doc) {
+            doc.innerHTML = translation[key][lang]
         }
     })
 }

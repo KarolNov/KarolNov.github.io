@@ -3,6 +3,10 @@
   html {
     font-size: 55%;
   }
+
+  .nav .link {
+    margin: 3rem 0 !important;
+  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -268,9 +272,17 @@ body {
   background: none;
 }
 
-.modal-content {
+.toggleModal:hover {
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+}
+.modal .modal-content {
   position: fixed;
-  top: 0;
+  transition: top 800ms ease-in;
+  top: -200vh;
   bottom: 0;
   left: 0;
   right: 0;
@@ -278,32 +290,38 @@ body {
   background: white;
   border: 1px solid black;
   height: 80vh;
-  width: 80vw;
+  width: 90vw;
   margin: auto;
 }
-.modal-content header {
-  font-size: 6rem;
+.modal .modal-content header {
+  padding: 5rem 0 0 0;
   text-align: center;
-  padding: 1rem;
+  font-size: 10rem;
 }
-.modal-content header .toggleModal {
+.modal .modal-content header .toggleModal {
   position: absolute;
+  top: 1rem;
   right: 1rem;
   height: 20px;
   width: 20px;
+  border: none;
+  background: url("./data/assets/x.svg");
+  background-size: 20px 20px;
 }
-.modal-content .body {
+.modal .modal-content .body {
   padding: 1rem;
+  height: calc(100% - 20rem);
+  overflow-y: auto;
 }
-.modal-content .body h1 {
+.modal .modal-content .body h1 {
+  margin-top: 0;
   font-size: 3rem !important;
   text-align: center;
 }
-.modal-content .body p {
+.modal .modal-content .body p {
   text-align: justify;
 }
-
-.backdrop {
+.modal .backdrop {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -313,11 +331,17 @@ body {
   background: black;
   height: 100vh;
   width: 100vw;
-  opacity: 0.3;
+  opacity: 0;
+  transition: opacity 500ms ease-in;
 }
 
-#js {
-  display: none;
+#js ul, #node ul, #react ul, #html ul, #sass ul {
+  font-size: 1.3rem;
+  padding-left: 2rem;
+  line-height: 1.8rem;
+}
+#js ul li, #node ul li, #react ul li, #html ul li, #sass ul li {
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

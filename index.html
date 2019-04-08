@@ -52,7 +52,7 @@
                             <span></span>
                         </div>
                     </div>
-                    <div class="skill">
+                    <div data-modal-target="react" class="skill toggleModal">
                         <i class="devicon-react-original"></i>
                         <h5>React</h5>
                         <div class="skillbar">
@@ -62,7 +62,7 @@
                             <span></span>
                         </div>
                     </div>
-                    <div class="skill">
+                    <div data-modal-target="node" class="skill toggleModal">
                         <i class="devicon-nodejs-plain"></i>
                         <h5>Node.js</h5>
                         <div class="skillbar">
@@ -72,7 +72,7 @@
                             <span></span>
                         </div>
                     </div>
-                    <div class="skill">
+                    <div data-modal-target="html" class="skill toggleModal">
                         <i class="devicon-html5-plain"></i>
                         <h5>HTML5</h5>
                         <div class="skillbar">
@@ -82,7 +82,7 @@
                             <span></span>
                         </div>
                     </div>
-                    <div class="skill">
+                    <div data-modal-target="sass" class="skill toggleModal">
                         <i class="devicon-sass-original"></i>
                         <h5>Sass/CSS3</h5>
                         <div class="skillbar">
@@ -113,6 +113,37 @@
                             <!--asking questions-->
                         </div>
                     </div>
+                    <header class="subtitle" id="skills_title_other">
+                        <!--other skills title-->
+                    </header>
+                    <div class="skill">
+                        <i class="devicon-visualstudio-plain"></i>
+                        <h5>Visual Studio Code</h5>
+                        <div class="desc" id="visualstudio_desc">
+                            <!--description-->
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="devicon-git-plain"></i>
+                        <h5>Git</h5>
+                        <div class="desc" id="git_desc">
+                            <!--description-->
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="devicon-inkscape-plain"></i>
+                        <h5>SVG</h5>
+                        <div class="desc" id="svg_desc">
+                            <!--description-->
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="devicon-ubuntu-plain"></i>
+                        <h5>Ubuntu</h5>
+                        <div class="desc" id="ubuntu_desc">
+                            <!--description-->
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="nav">
@@ -131,18 +162,95 @@
     </div>
     <div class="modal" id="js">
         <div class="modal-content">
-            <header>                        
+            <header>
                 <i class="devicon-javascript-plain"></i>
                 <button data-modal-target="js" class="toggleModal"></button>
             </header>
             <div class="body">
-                <h1 id="js_title"> Title<!--my javascript skills--></h1>
+                <h1 id="js_title">
+                    <!--my javascript skills-->
+                </h1>
                 <ul id="js_list">
                     <!--list of skills-->
                 </ul>
             </div>
         </div>
-        <div class="backdrop">
+        <div data-modal-target="js" class="backdrop toggleModal">
+
+        </div>
+    </div>
+    <div class="modal" id="react">
+        <div class="modal-content">
+            <header>
+                <i class="devicon-react-original"></i>
+                <button data-modal-target="react" class="toggleModal"></button>
+            </header>
+            <div class="body">
+                <h1 id="react_title">
+                    <!--my javascript skills-->
+                </h1>
+                <ul id="react_list">
+                    <!--list of skills-->
+                </ul>
+            </div>
+        </div>
+        <div data-modal-target="react" class="backdrop toggleModal">
+
+        </div>
+    </div>
+    <div class="modal" id="node">
+        <div class="modal-content">
+            <header>
+                <i class="devicon-nodejs-plain"></i>
+                <button data-modal-target="node" class="toggleModal"></button>
+            </header>
+            <div class="body">
+                <h1 id="node_title">
+                    <!--my javascript skills-->
+                </h1>
+                <ul id="node_list">
+                    <!--list of skills-->
+                </ul>
+            </div>
+        </div>
+        <div data-modal-target="node" class="backdrop toggleModal">
+
+        </div>
+    </div>
+    <div class="modal" id="html">
+        <div class="modal-content">
+            <header>
+                <i class="devicon-html5-plain"></i>
+                <button data-modal-target="html" class="toggleModal"></button>
+            </header>
+            <div class="body">
+                <h1 id="html_title">
+                    <!--my javascript skills-->
+                </h1>
+                <ul id="html_list">
+                    <!--list of skills-->
+                </ul>
+            </div>
+        </div>
+        <div data-modal-target="html" class="backdrop toggleModal">
+        </div>
+    </div>
+    <div class="modal" id="sass">
+        <div class="modal-content">
+            <header>
+                <i class="devicon-sass-original"></i>
+                <button data-modal-target="sass" class="toggleModal"></button>
+            </header>
+            <div class="body">
+                <h1 id="sass_title">
+                    <!--my javascript skills-->
+                </h1>
+                <ul id="sass_list">
+                    <!--list of skills-->
+                </ul>
+            </div>
+        </div>
+        <div data-modal-target="sass" class="backdrop toggleModal">
         </div>
     </div>
     <script src="bundle.js"></script>
