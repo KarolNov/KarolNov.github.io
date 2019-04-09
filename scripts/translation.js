@@ -187,9 +187,87 @@ const translation = {
         en: "Other skills",
         pl: "Pozostałe umiejętności"
     },
+    "git_desc": {
+        en: `
+        <h6>Git</h6>
+        <p>
+        I know and use Git for version control. I used it as CLI as well as with Git Kraken. I have also a short working experience with SVN.
+        </p>`,
+        pl: `
+        <h6>Git</h6>
+        <p>Znam i korzystam z Git jako systemu kontroli wersji. Używałem go zarówno w formie CLI jaki w postaci aplikacji Git Kraken. Mam też krótkie doświadczenie w pracy z SVN.</p>`
+    },
+    "visualstudio_desc": {
+        en: `
+        <h6>Visual Studio Code</h6>
+        <p>I use Visual Studio Code as my main IDE. I use Emmet and many extensions for faster workflow.</p>`,
+        pl: `
+        <h6>Visual Studio Code</h6>
+        <p>Korzystam z Visual Studio Code jako mojego głównego IDE. Korzystam z Emmet i wielu rozszerzeń do szybszego tempa pracy.</p>`
+    },
+    "svg_desc": {
+        en: `
+        <h6>SVG</h6>
+        <p>I use and project SVG graphics, including CSS animating them.</p>`,
+        pl: `
+        <h6>SVG</h6>
+        <p>Korzystam z i projektuję grafiki, w tym animuję je za pomocą CSS.</p>`
+    },
+    "ubuntu_desc": {
+        en: `
+        <h6>Ubuntu</h6>
+        <p>My preferred operating system is Ubuntu. I know basics of bash and I use npm and snap to fast forward libraries installion for projects. I want to learn Docker.</p>`,
+        pl: `
+        <h6>Ubuntu</h6>
+        <p>Moim preferowanym systemem operacyjnym jest Ubuntu. Znam podstawy bash i używam npm oraz snap do przyspieszenia instalacji bibliotek do projektów. Chcę nauczyć się Dockera.</p>`
+    },
     "portfolio_link": {
         en: "my works",
         pl: "moje prace"
+    },
+    "works_title": {
+        en: "Some of my works",
+        pl: "Część moich prac"
+    },
+    "guider_title": {
+        en: "GuideR - Wordpress website",
+        pl: "Guider - strona Wordpress"
+    },
+    "guider_desc": {
+        en: `<p> One of my first commercial projects. Simple WP child theme. Main tasks were fast time of development (one week), working with graphics designer (vector graphics in background and doves, design) and creating it bilingually. If I had to upgrade this site now I would create some loading system and optimize network performance.</p>`,
+        pl: `<p> Jeden z moich pierwszych komercyjnych projektów. Prosty motyw "dziecko" w WP. Głównymi zadaniami był szybki czas stworzenia działającej wersji (tydzień), współpraca z graficzką (grafiki wektorowe w tle, gołębie na stronie, design) i tworzenie jej dwujęzycznie. Gdybym miał ją teraz poprawiać dodałbym system ładowania i zoptymalizował jego czas.</p>`
+    },
+    "tree_title": {
+        en: "Random Tree Generator",
+        pl: "Generator Drzew"
+    },
+    "tree_desc": {
+        en: "<p> One of my first JS projects. Created back in 2017 when I was learning p5.js and drawing in HTML5 Canvas. Inspirated by brilliant <a href='https://www.youtube.com/user/shiffman' target='_blank'> Daniel Shiffman </a>.</p>",
+        pl: "<p> Jeden z moich pierwszych projektów w JS. Stworzony w 2017, gdy uczyłem się p5.js i rysowania w HTML5 Canvas. Zainspirowany genialnym <a href='https://www.youtube.com/user/shiffman' target='_blank'> Danielem Shiffman </a>.</p>"
+    },
+    "animatu_title": {
+        en: "Animatu - HTML static website",
+        pl: "Animatu - statyczna strona HTML"
+    },
+    "animatu_desc": {
+        en: '<p> My first "serious" HTML static website created for a friend who runs animation company for children. The whole concept was giving colorful and fun website. </p>',
+        pl: '<p> Moje pierwsza "poważna" strona statyczna HTML stworzona dla znajomej, które prowadzi firmę animacyjną dla dzieci. Ideą było stworzenie zabawnej i kolorowej strony. </p>'
+    },
+    "ball_title": {
+        en: "Ball Game - quick project for fun",
+        pl: "Gra z piłką - szybki projekt dla zabawy"
+    },
+    "ball_desc": {
+        en: '<p> A quick one day build for fun. I created "balance the ball" game from scratch using HTML5 Canvas and device orientation events. <b> Of course it works for mobile only. </b> </p>',
+        pl: '<p> Szybki, jednodniowy projekt dla zabawy. Stworzyłem grę z balansowaniem piłką od zera używając HTML5 Canvas i eventów device orientation. <b> Oczywiście działa tylko na urządzeniach mobilnych </b> </p>'
+    },
+    "audio_title": {
+        en: 'Beatpad - Web Audio API application',
+        pl: 'BeatPad - aplikacja Web Audio API'
+    },
+    "audio_desc": {
+        en: '<p> Another quick build for fun. This time I created drumpad with hardcoded samples from scratch. Main challenge was working with audiobuffers to record the sound to main channels at the same time. I learned something about Blobs and ArrayBuffers during this challenge. </p>',
+        pl: '<p> Kolejny szybki projekt dla zabawy. Tym razem stworzyłem aplikację "drumpad" z ustalonymi samplami. Głównym wyzywaniem było korzystanie z audiobuffers, aby nagrywać na kilku ścieżkach jednocześnie. Nauczyłem się czegoś o Blobs i ArrayBuffers podczas tego wyzwania. </p>'
     },
     "contact_link": {
         en: "contact",

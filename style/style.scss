@@ -5,9 +5,10 @@
     html {
         font-size: 55%;
     }
-    .nav{
-        .link{
-            margin: 3rem 0 !important;
+
+    .nav {
+        .link {
+            margin: 2.8rem 0 !important;
         }
     }
 }
@@ -42,6 +43,10 @@ body {
     background: white;
     color: black;
     overflow: hidden;
+
+    a {
+        color: black;
+    }
 }
 
 #langSwitch {
@@ -90,6 +95,7 @@ body {
     #back {
         font-size: 3rem;
         margin: 2rem 0;
+        z-index: 950;
 
         &:hover {
             cursor: pointer;
@@ -188,7 +194,7 @@ body {
 }
 
 
-#skills_content {
+.content {
     .container {
         @include flexbox();
         @include flex-direction(row);
@@ -196,6 +202,10 @@ body {
         @include justify-content(space-around);
         @include align-items(center);
         padding: 2rem;
+
+        &:last-child {
+            margin-bottom: 5rem;
+        }
 
         .subtitle {
             font-size: 3rem;
@@ -275,10 +285,76 @@ body {
                 }
             }
         }
+
+        .section {
+            @include inlineflex();
+            @include flex-direction(column);
+            @include justify-content(center);
+            @include align-items(center);
+            width: 100%;
+
+            .subtitle {
+                font-size: 2rem;
+                border-bottom: none;
+                padding-top: 1rem;
+                padding-bottom: 0 !important;
+                border-top: 1px dashed black;
+
+            }
+
+            &:first-of-type {
+                .subtitle {
+                    border-top: none;
+                }
+            }
+
+            .desc {
+                width: 60%;
+                min-width: 300px;
+            }
+
+            .links {
+                a {
+                    display: block;
+                    color: black;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+
+                font-size: 8rem;
+                width: 100%;
+                @include flexbox();
+                @include justify-content(space-evenly);
+
+                label {
+                    display: block;
+                    font-size: 2rem;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                }
+
+                img,
+                i {
+                    height: 8rem;
+                    width: 8rem;
+                    display: block;
+                    position: relative;
+                    left: 0;
+                    right: 0;
+                    margin: 1rem auto;
+                }
+            }
+        }
     }
 }
 
-.toggleModal:hover{
+.toggleModal:hover {
     cursor: pointer;
 }
 
@@ -349,7 +425,11 @@ body {
     }
 }
 
-#js, #node, #react, #html, #sass {
+#js,
+#node,
+#react,
+#html,
+#sass {
     ul {
         font-size: 1.3rem;
         padding-left: 2rem;

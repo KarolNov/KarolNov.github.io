@@ -5,7 +5,7 @@
   }
 
   .nav .link {
-    margin: 3rem 0 !important;
+    margin: 2.8rem 0 !important;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -27,6 +27,9 @@ body {
   background: white;
   color: black;
   overflow: hidden;
+}
+body a {
+  color: black;
 }
 
 #langSwitch {
@@ -72,6 +75,7 @@ body {
 #menu #back {
   font-size: 3rem;
   margin: 2rem 0;
+  z-index: 950;
 }
 #menu .nav > h1:hover,
 #menu #back:hover {
@@ -161,7 +165,7 @@ body {
   font-weight: bold;
 }
 
-#skills_content .container {
+.content .container {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -186,23 +190,26 @@ body {
   align-items: center;
   padding: 2rem;
 }
-#skills_content .container .subtitle {
+.content .container:last-child {
+  margin-bottom: 5rem;
+}
+.content .container .subtitle {
   font-size: 3rem;
   width: 100%;
   text-align: center;
   border-bottom: 1px solid black;
   padding-bottom: 1rem;
 }
-#skills_content .container .subtitle br {
+.content .container .subtitle br {
   display: block;
   content: "";
   margin-top: -2rem;
 }
-#skills_content .container .subtitle em {
+.content .container .subtitle em {
   font-size: 1rem;
   color: #373737;
 }
-#skills_content .container .skill {
+.content .container .skill {
   display: inline -webkit-box;
   display: inline -moz-box;
   display: inline -ms-flexbox;
@@ -227,27 +234,27 @@ body {
   margin: 2rem 4rem;
   text-align: center;
 }
-#skills_content .container .skill i {
+.content .container .skill i {
   font-size: 8rem !important;
 }
-#skills_content .container .skill img {
+.content .container .skill img {
   height: 8rem;
 }
-#skills_content .container .skill h5 {
+.content .container .skill h5 {
   font-size: 3rem;
   margin: 0;
 }
-#skills_content .container .skill h6 {
+.content .container .skill h6 {
   font-size: 1.5rem;
   margin: 0.2rem;
 }
-#skills_content .container .skill .desc p {
+.content .container .skill .desc p {
   text-align: justify;
 }
-#skills_content .container .skill .desc a {
+.content .container .skill .desc a {
   color: black;
 }
-#skills_content .container .skill .skillbar {
+.content .container .skill .skillbar {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -259,7 +266,7 @@ body {
   justify-content: space-between;
   -ms-flex-pack: space-between;
 }
-#skills_content .container .skill .skillbar span {
+.content .container .skill .skillbar span {
   display: inline-block;
   width: 4rem !important;
   height: 4rem !important;
@@ -268,8 +275,84 @@ body {
   border-radius: 50%;
   margin: 0.5rem;
 }
-#skills_content .container .skill .skillbar span.empty {
+.content .container .skill .skillbar span.empty {
   background: none;
+}
+.content .container .section {
+  display: inline -webkit-box;
+  display: inline -moz-box;
+  display: inline -ms-flexbox;
+  display: inline -webkit-flex;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  width: 100%;
+}
+.content .container .section .subtitle {
+  font-size: 2rem;
+  border-bottom: none;
+  padding-top: 1rem;
+  padding-bottom: 0 !important;
+  border-top: 1px dashed black;
+}
+.content .container .section:first-of-type .subtitle {
+  border-top: none;
+}
+.content .container .section .desc {
+  width: 60%;
+  min-width: 300px;
+}
+.content .container .section .links {
+  font-size: 8rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-evenly;
+  -moz-justify-content: space-evenly;
+  -ms-justify-content: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+}
+.content .container .section .links a {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+.content .container .section .links a:hover {
+  text-decoration: none;
+}
+.content .container .section .links label {
+  display: block;
+  font-size: 2rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.content .container .section .links img,
+.content .container .section .links i {
+  height: 8rem;
+  width: 8rem;
+  display: block;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 1rem auto;
 }
 
 .toggleModal:hover {
@@ -335,12 +418,20 @@ body {
   transition: opacity 500ms ease-in;
 }
 
-#js ul, #node ul, #react ul, #html ul, #sass ul {
+#js ul,
+#node ul,
+#react ul,
+#html ul,
+#sass ul {
   font-size: 1.3rem;
   padding-left: 2rem;
   line-height: 1.8rem;
 }
-#js ul li, #node ul li, #react ul li, #html ul li, #sass ul li {
+#js ul li,
+#node ul li,
+#react ul li,
+#html ul li,
+#sass ul li {
   margin-bottom: 2rem;
 }
 

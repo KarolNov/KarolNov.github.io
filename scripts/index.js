@@ -55,13 +55,12 @@ const showMenu = () => {
         h.onclick = () => {
             //slide menu to the top
             if (i !== 0) {
-                h.parentElement.parentElement.style.marginTop = -i * 8 + "rem";
+                h.parentElement.parentElement.style.marginTop = -i * 8.5 + "rem";
             }
             //slide this link to the left and center
             h.parentElement.style.left = "50%";
             h.parentElement.style.transform = "translate(-50%, 0)"
             //show proper content
-            console.log(h.firstChild);
             let link = h.firstChild.href.split("#")[1].concat("_content");
             let content = document.getElementById(link);
             content.style.display = "block";
