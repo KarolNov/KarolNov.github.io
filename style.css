@@ -19,6 +19,26 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 html {
   font-family: "Montserrat", sans-serif;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+html * {
+  scrollbar-color: black rgba(0, 0, 0, 0.2);
+  scrollbar-width: thin;
+}
+html ::-webkit-scrollbar {
+  width: 5px;
+}
+html ::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+html ::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.7);
+}
+html ::-webkit-scrollbar-thumb:hover {
+  background: #000;
 }
 
 body {
