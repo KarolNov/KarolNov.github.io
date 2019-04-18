@@ -53,9 +53,10 @@ const showMenu = () => {
     let navs = document.querySelectorAll('#menu .link');
     navs.forEach((h, i) => {
         h.onclick = () => {
+            let rem = window.innerWidth < 600 ? 10.5 : 8.5
             //slide menu to the top
             if (i !== 0) {
-                h.parentElement.parentElement.style.marginTop = -i * 8.5 + "rem";
+                h.parentElement.parentElement.style.marginTop = -i * (rem-1) + "rem";
             }
             //slide this link to the left and center
             h.parentElement.style.left = "50%";
@@ -66,7 +67,7 @@ const showMenu = () => {
             content.style.display = "block";
             let titleHeight = document.getElementById("welcomeAnimation").offsetHeight;
             setTimeout(() => {
-                content.style.height = `calc(100vh - 7.5rem - ${titleHeight}px)`;
+                content.style.height = `calc(100vh - ${rem}rem - ${titleHeight}px)`;
             }, 10);
             //back button function
             let back = document.getElementById('back');

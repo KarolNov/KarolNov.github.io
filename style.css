@@ -27,6 +27,7 @@ html {
 html * {
   scrollbar-color: black rgba(0, 0, 0, 0.2);
   scrollbar-width: thin;
+  font-family: "Montserrat", sans-serif;
 }
 html ::-webkit-scrollbar {
   width: 5px;
@@ -373,6 +374,48 @@ body a {
   left: 0;
   right: 0;
   margin: 1rem auto;
+}
+.content .container form {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-evenly;
+  -moz-justify-content: space-evenly;
+  -ms-justify-content: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  height: 50vh;
+  width: 80%;
+}
+.content .container form input, .content .container form textarea {
+  width: 100%;
+}
+.content .container form textarea {
+  height: 70%;
+  resize: none;
+}
+.content .container form button {
+  padding: 1rem;
+  background: #000;
+  color: white;
+  border: none;
+}
+.content .container #contact_me {
+  width: 100%;
+  text-align: center;
+}
+.content .container #contact_me a {
+  font-size: 1.2rem;
 }
 
 .toggleModal:hover {

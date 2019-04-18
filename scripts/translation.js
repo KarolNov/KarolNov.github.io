@@ -231,6 +231,24 @@ const translation = {
         en: "Some of my works",
         pl: "Część moich prac"
     },
+    "cr_title": {
+        en: "cinerentALL - fullstack SERN application",
+        pl: "cinerentALL - aplikacja fullstack SERN"
+    },
+    "cr_desc": {
+        en: `
+        <p> Application I created from scratch using React (+MobX, reactstrap and ag-grid) on frontend and Node.js/Express(+MySQL database) on the back. <br/>
+        Because of licence I can't show whole source code, instead I linked short documentation and presentation of application usage. </p>
+        `,
+        pl:`
+        <p> Aplikacja, którą stworzyłem od podstaw z użyciem React (+MobX, reactstrap i ag-grid) na froncie oraz Node.js/Express(+bazy danych MySQL) na backu. <br/>
+        Ze względu na licencję nie udostępniam całego kodu źródłowego, jedynie krótką dokumentację oraz prezentację z działania aplikacji. </p>
+        `
+    },
+    "cr_presentation": {
+        en: "Presentation",
+        pl: "Prezentacja"
+    },
     "guider_title": {
         en: "GuideR - Wordpress website",
         pl: "Guider - strona Wordpress"
@@ -275,7 +293,32 @@ const translation = {
         en: "contact",
         pl: "kontakt"
     },
-
+    "contact_me": {
+        en: `
+        <p> Contact me at </p>
+        <a href="mailto:karolnovljakovic@gmail.com?Subject=You're%20hired!" target="_top"> karolnovljakovic@gmail.com </a>
+        <p> or use this form </p>
+        `,
+        pl: `
+        
+        `
+    },
+    "contact_email": {
+        en: "Your email",
+        pl: "Twój email"
+    },
+    "contact_topic": {
+        en: "Topic of your email",
+        pl: "Temat twojego emaila"
+    },
+    "contact_message": {
+        en: "Your message...",
+        pl: "Twoja wiadomość..."
+    },
+    "contact_button": {
+        en: "send",
+        pl: "wyślij"
+    }
 }
 
 translation.translate = (lang) => {
@@ -283,7 +326,11 @@ translation.translate = (lang) => {
         let doc = document.getElementById(key)
         console.log(doc);
         if (doc) {
-            doc.innerHTML = translation[key][lang]
+            if(doc.tagName!=="INPUT" && doc.tagName!=="TEXTAREA"){
+                doc.innerHTML = translation[key][lang]
+            }else{
+                doc.placeholder = translation[key][lang]
+            }       
         }
     })
 }
