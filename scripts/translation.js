@@ -300,7 +300,9 @@ const translation = {
         <p> or use this form </p>
         `,
         pl: `
-        
+        <p> Napisz do mnie na </p>
+        <a href="mailto:karolnovljakovic@gmail.com?Subject=You're%20hired!" target="_top"> karolnovljakovic@gmail.com </a>
+        <p> lub użyj tego formularza </p>
         `
     },
     "contact_email": {
