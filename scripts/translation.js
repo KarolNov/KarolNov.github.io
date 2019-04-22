@@ -8,15 +8,15 @@ const translation = {
         pl: "o mnie"
     },
     "about_description": {
-        en: `<p>I am Javascript Developer with year of experience in developing websites and apps based on HTML5 (and Bootstrap library), CSS3 (and precompiler Sass), also using Javascript i jQuery. </p> 
+        en: `<p>I am Javascript Developer with year of experience in developing websites and apps based on HTML5 (and Bootstrap library), CSS3 (and precompiler Sass), also using Javascript and jQuery. </p> 
         <p> Last half year I was intensely trening Javascript programming, including Node.js (mostly Express framework and MySQL databases) and React (with MobX). I have also experience in production of Electron desktop apps. <p/>
-        <p> Beside technical skills, as an scouting leader - educator and instructor, good communication, responsibility for own work and team, creativity and wide perspective are important for me and helps me to resolve hardest problems and achiving highest goals. </p>
-        <p>I'm looking for a job, in which I will have possibility to develop towards being Fullstack or Backend Javascript Developer. I would love to learn React Native.</p>`,
+        <p> Beside technical skills, as an scouting leader - educator and instructor, good communication, responsibility for own work and team, creativity and wide perspective are important for me and help me to resolve hardest problems and achive highest goals. </p>
+        <p>I'm looking for a job, in which I will have possibility to develop towards being Fullstack Javascript Developer or Team Leader.I would love to learn React Native.</p>`,
         pl:
         `<p>Jestem Javascript Developerem. Mam za sobą roczne doświadczenie w budowaniu stron w oparciu o HTML5 (oraz bibliotekę Bootstrap), CSS3 (oraz prekompilator Sass) oraz Javascript i jQuery. </p>
         <p>Ostatnie pół roku poświęciłem na intensywne ćwiczenia i doskonalenie swoich umiejętności. Programowałem w Javascript, a także Node.js (głównie Express oraz bazy danych MySQL) i React (wraz z MobX). Mam także doświadczenie w produkowaniu aplikacji desktopowych z użyciem Electron.</p>
         <p>Poza umiejętnościami technicznymi, jako instruktor ZHP - wychowawca i szkoleniowiec, ważne są dla mnie dobra komunikacja, odpowiedzialność za swoją pracę i zespół w którym pracuję, a także kreatywność i szeroka perspektywa, które pomagają w rozwiązywaniu największych problemów i najwyżej zawieszonych poprzeczek.</p>
-        <p>Szukam pracy, w której będę miał możliwość rozwijania się jako Fullstack lub Backend Javascript Developer. Chętnie nauczę się również React Native.</p>`
+        <p>Szukam pracy, w której będę miał możliwość rozwijania się jako Fullstack Javascript Developer lub Team Leader. Chętnie nauczę się również React Native.</p>`
     },
     "skills_link": {
         en: "my skills",

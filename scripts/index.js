@@ -5,7 +5,7 @@ window.onload = () => {
     welcomeAnimation();
     setTimeout(() => {
         showMenu();
-    }, 5200);
+    }, 2200);
     handleModals();
 }
 
@@ -43,7 +43,7 @@ const welcomeAnimation = () => {
     slideFirst.style.width = "100%";
     setTimeout(() => {
         slideFirst.style.height = "calc(100%)"
-    }, 3100)
+    }, 1100)
 }
 
 const showMenu = () => {
@@ -69,19 +69,31 @@ const showMenu = () => {
             setTimeout(() => {
                 content.style.height = `calc(100vh - ${rem}rem - ${titleHeight}px)`;
             }, 10);
+            //make all other links unclickable and invisible to protect UI from bugs
+            let links = Array.from(navs)
+            .reduce((prev, cur) => prev.concat(cur.getElementsByTagName("a")[0]), [])
+            .filter(el=>el.id!==h.getElementsByTagName("a")[0].id);
             //back button function
             let back = document.getElementById('back');
             setTimeout(() => {
                 back.style.opacity = 1;
+                links.forEach(el=>{
+                    el.parentElement.style.pointerEvents = "none"
+                    el.parentElement.style.opacity = "0"
+                });
             }, 1000);
             back.onclick = () => {
+                links.forEach(el=>{
+                    el.parentElement.style.pointerEvents = "auto"
+                    el.parentElement.style.opacity = "1"
+                });
                 h.parentElement.parentElement.style.marginTop = 0;
                 h.parentElement.style.left = "5px";
                 h.parentElement.style.transform = "";
                 content.style.height = 0;
                 setTimeout(() => {
                     content.style.display = "none";
-                }, 2000);
+                }, 1000);
                 back.style.opacity = 0;
             }
         }

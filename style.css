@@ -62,6 +62,9 @@ body a {
   margin: 0 10px;
 }
 
+#welcomeAnimation {
+  max-width: calc(100% - 5rem - 20px);
+}
 #welcomeAnimation h1 {
   margin: 1rem 0;
   font-size: 6rem;
@@ -73,7 +76,7 @@ body a {
   height: 2rem;
   width: 0%;
   background: black;
-  transition: width 3000ms ease-in, height 2000ms ease-in-out;
+  transition: width 1000ms ease-in, height 1000ms ease-in-out;
 }
 
 #menu {
@@ -84,16 +87,17 @@ body a {
   height: calc(100% - 8.5rem);
   color: white;
   opacity: 0;
-  transition: opacity 2000ms ease-in-out;
+  transition: opacity 1500ms ease-in-out;
 }
 #menu .nav {
   display: inline-block;
   position: relative;
   left: 5px;
-  transition: all 2000ms ease-in;
+  transition: all 1000ms ease-in;
 }
 #menu .nav > h1,
 #menu #back {
+  transition: opacity 1000ms ease-in-out;
   font-size: 3rem;
   margin: 2rem 0;
   z-index: 950;
@@ -137,11 +141,10 @@ body a {
   margin-top: 0.9rem;
   left: 1rem;
   opacity: 0;
-  transition: opacity 2000ms ease-in-out;
 }
 
 #navContainer {
-  transition: all 2000ms ease-in-out;
+  transition: all 1000ms ease-in-out;
 }
 
 .content {
@@ -150,7 +153,7 @@ body a {
   color: black;
   height: 0;
   width: 100%;
-  transition: height 2000ms ease-in-out;
+  transition: height 1000ms ease-in-out;
   position: relative;
   margin-top: 0;
   overflow-y: scroll;
