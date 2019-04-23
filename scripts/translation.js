@@ -241,6 +241,14 @@ const translation = {
         en: "Some of my works",
         pl: "Część moich prac"
     },
+    "reactbuntu_title": {
+        en: "Reactbuntu - uBuntu in browser",
+        pl: "Reactubuntu - uBuntu w przeglądarce"
+    },
+    "reactbuntu_desc": {
+        en: "Open source project I just started working on trying to recreate UI and basics functionality of uBuntu OS in browser.",
+        pl: "Projekt open source, który właśnie rozpocząłem próbując odtworzyć UI i podstawowe funkcję uBuntu w przeglądarce."
+    },
     "cr_title": {
         en: "cinerentALL - fullstack SERN application",
         pl: "cinerentALL - aplikacja fullstack SERN"
