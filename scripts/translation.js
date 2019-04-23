@@ -11,7 +11,7 @@ const translation = {
         en: `<p>I am Javascript Developer with year of experience in developing websites and apps based on HTML5 (and Bootstrap library), CSS3 (and precompiler Sass), also using Javascript and jQuery. </p> 
         <p> Last half year I was intensely trening Javascript programming, including Node.js (mostly Express framework and MySQL databases) and React (with MobX). I have also experience in production of Electron desktop apps. <p/>
         <p> Beside technical skills, as an scouting leader - educator and instructor, good communication, responsibility for own work and team, creativity and wide perspective are important for me and help me to resolve hardest problems and achive highest goals. </p>
-        <p>I'm looking for a job, in which I will have possibility to develop towards being Fullstack Javascript Developer or Team Leader.I would love to learn React Native.</p>`,
+        <p>I'm looking for a job, in which I will have possibility to develop towards being Fullstack Javascript Developer or Team Leader. I would love to learn React Native.</p>`,
         pl:
         `<p>Jestem Javascript Developerem. Mam za sobą roczne doświadczenie w budowaniu stron w oparciu o HTML5 (oraz bibliotekę Bootstrap), CSS3 (oraz prekompilator Sass) oraz Javascript i jQuery. </p>
         <p>Ostatnie pół roku poświęciłem na intensywne ćwiczenia i doskonalenie swoich umiejętności. Programowałem w Javascript, a także Node.js (głównie Express oraz bazy danych MySQL) i React (wraz z MobX). Mam także doświadczenie w produkowaniu aplikacji desktopowych z użyciem Electron.</p>
@@ -222,6 +222,16 @@ const translation = {
         pl: `
         <h6>Ubuntu</h6>
         <p>Moim preferowanym systemem operacyjnym jest Ubuntu. Znam podstawy bash i używam npm oraz snap do przyspieszenia instalacji bibliotek do projektów. Chcę nauczyć się Dockera.</p>`
+    },
+    "lang_desc": {
+        en: `
+        <h6>Language skills</h6>
+        <p> I speak natively Polish and Serbo-Croatian. I fluently speak English at B2/C1 level, so I have no problem with working as a part of multinational team. Also I know basics of Spanish and French.</p>
+        `,
+        pl: `
+        <h6>Zdolności językowe</h6>
+        <p> Znam język polski i chorwackoserbski jako ojczysty. Płynnie mówię w języku angielskim na poziomie B2/C1, więc bezproblemu mogę stanowić część międzynarodowego teamu. Znam też podstawy francuskiego i hiszpańskiego.</p>
+        `
     },
     "portfolio_link": {
         en: "my works",
